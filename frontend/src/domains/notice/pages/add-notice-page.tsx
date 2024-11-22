@@ -12,11 +12,11 @@ import { PageContentHeader } from '@/components/page-content-header';
 import { getErrorMsg } from '@/utils/helpers/get-error-message';
 import { NoticeFormProps, NoticeFormSchema } from '../types';
 import { useAddNoticeMutation } from '../api/notice-api';
-import { NoticeForm } from '../components';
+import { NoticeForm } from '../components/notice-form';
 
 const initialState: NoticeFormProps = {
   title: '',
-  content: '',
+  description:'',//  content: '',
   status: 0,
   recipientType: 'EV',
   recipientRole: 0,
